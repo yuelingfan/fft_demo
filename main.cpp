@@ -329,6 +329,9 @@ int main(int argc, char *argv[])
     int fftH = dataH + kernelH - 1;
     int fftW = dataW + kernelW - 1;
     int fftSize = fftH * fftW;
+    std::cout << "nx=ny= "<< nx << std::endl;
+    std::cout << "n_batch: "<< n_batch << std::endl;
+    std::cout << "kernelH: "<< kernelH << ",kernelH: "<< kernelH << std::endl;
 
     /*Generate input data*/
     double *data = (double *)malloc(sizeof(double) * nx * ny * C*2);
